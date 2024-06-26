@@ -42,6 +42,31 @@ inquirer
             'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1',
             'Mozilla Public License 2.0', 'The Unlicense'
         ]
+    },
+    /*
+    {
+        badges
+    },
+    */
+    {
+        type: 'input',
+        name: 'features',
+        message: 'What type of features does your project include?'
+    },
+    {
+        type: 'input',
+        name: 'contribution',
+        message: 'How can others contribute towards your program if you would like?'
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Please enter your GitHub username'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Please enter your email address'
     }
 ])
 .then((response) =>
