@@ -22,23 +22,41 @@ function generateMarkdown(answers) {
   # ${answers.title}
 
   ## Description
-        ${answers.description}
+
+  ${answers.description}
+
   ## Installation
-        ${answers.installation}
+
+  ${answers.installation}
+
   ## Usage
-        ${answers.usage}
+
+  ${answers.usage}
+
   ## Credit
-        ${answers.credit}
+
+  ${answers.credit}
+
   ## License
-        ${answers.license}
+
+  ${answers.license}
+
   ## Features
-        ${answers.features}
+
+  ${answers.features}
+
   ## Contribution
-        ${answers.contributions}
+
+  ${answers.contributions}
+
   ## GitHub
-        ${answers.github}
+
+  ${answers.github}
+
   ## Email
-        ${answers.email}
+
+  ${answers.email}
+  
   `;
 }
 
