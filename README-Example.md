@@ -1,29 +1,31 @@
 
-  # Example Title
+  # title
 
   ## Description
 
-  Example Description
+  des
 
   ## Installation
 
-  Example Installation Methods
+  inst
 
   ## Usage
 
-  Example Instructions
+  usage
 
   ## Credit
 
-  Example Credits
+  
 
   ## License
 
-  MIT License
+  [!Creative Commons Zero V1.0 Universal](https://licensebuttons.net/l/zero/1.0/80x15.png)
+
+  Creative Commons Zero V1.0 Universal
 
   ## Features
 
-  Example Features
+  feat
 
   ## Contribution
 
@@ -31,10 +33,10 @@
 
   ## GitHub
 
-  ExampleGit
+  git
 
   ## Email
 
-  ExampleEmail
+  em
   
   
