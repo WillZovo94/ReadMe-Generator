@@ -6,42 +6,28 @@ function renderLicenseBadge(license) {
     }
 
     switch(license) {
-      case 'Apache License 2.0': {
-        return '[!Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'
-      }
-      case 'GNU General Public License v3.0': {
-        '[!GNU General Public License v3.0](https://img.shields.io/badge/License-EPL_1.0-red.svg)'
-      }
-      case 'MIT License' : {
-        return '[!MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)'
-      }
-      case 'BSD 2-Clause License' : {
-        return '[!BSD 2-Clause License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)'      
-      }
-      case 'BSD 3-Clause License' : {
-        return '[!BSD 3-Clause License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)'      
-      }
-      case 'Boost Software License 1.0' : {
-        return '[!Boost Software License 1.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'      
-      }
-      case 'Creative Commons Zero V1.0 Universal' : {
-        return '[!Creative Commons Zero V1.0 Universal](https://licensebuttons.net/l/zero/1.0/80x15.png)'      
-      }
-      case 'Eclipse Public License 1.0' : {
-        return '[!Eclipse Public LIcense 1.0](https://img.shields.io/badge/License-EPL_1.0-red.svg)'      
-      }
-      case 'GNU Affero General Public License V3.0' : {
-        return '[!GNU Affero General Public License V3.0](https://img.shields.io/badge/License-AGPL_v3-blue.svg)'      
-      }
-      case 'GNU General Public License V2.0' : {
-        return '[!GNU General Public License V2.0](https://img.shields.io/badge/License-GPL_v2-blue.svg)'      
-      }
-      case 'Mozilla Public License 2.0' : {
-        return '[!Mozilla Public License 2.0](https://img.shields.io/badge/License-MIT-yellow.svg)'      
-      }
-      case 'The Unlicense' : {
-        return '[!The Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)'      
-      }
+      case 'Apache License 2.0':
+        return '![Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'
+      case 'GNU General Public License v3.0':
+        return '![GNU General Public License v3.0](https://img.shields.io/badge/License-EPL_1.0-red.svg)'
+      case 'MIT License' :
+        return '![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)'
+      case 'BSD 2-Clause License' :
+        return '![BSD 2-Clause License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)'      
+      case 'BSD 3-Clause license' :
+        return '![BSD 3-Clause license](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)'      
+      case 'Boost Software License 1.0' :
+        return '![Boost Software License 1.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'      
+      case 'Creative Commons Zero V1.0 Universal' :
+        return '![Creative Commons Zero V1.0 Universal](https://licensebuttons.net/l/zero/1.0/80x15.png)'         
+      case 'GNU Affero General Public License V3.0' :
+        return '![GNU Affero General Public License V3.0](https://img.shields.io/badge/License-AGPL_v3-blue.svg)'      
+      case 'GNU General Public License v2.0' :
+        return '![GNU General Public License v2.0](https://img.shields.io/badge/License-GPL_v2-blue.svg)'      
+      case 'Mozilla Public License 2.0' :
+        return '![Mozilla Public License 2.0](https://img.shields.io/badge/License-MIT-yellow.svg)'      
+      case 'The Unlicense' :
+        return '![The Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)'      
       default: 
         return '';
     }
@@ -49,7 +35,34 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  switch(license) {
+    case 'Apache License 2.0':
+      return '[Apache License 2.0](https://opensource.org/licenses/Apache-2.0)'
+    case 'GNU General Public License v3.0':
+      return '[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0)'
+    case 'MIT License' :
+      return '[MIT License](https://opensource.org/licenses/MIT)'
+    case 'BSD 2-Clause License' :
+      return '[BSD 2-Clause License](https://opensource.org/licenses/BSD-2-Clause)'      
+    case 'BSD 3-Clause license' :
+      return '[BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause)'      
+    case 'Boost Software License 1.0' :
+      return '[Boost Software License 1.0](https://www.boost.org/LICENSE_1_0.txt)'      
+    case 'Creative Commons Zero V1.0 Universal' :
+      return '[Creative Commons Zero V1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)'           
+    case 'GNU Affero General Public License V3.0' :
+      return '[GNU Affero General Public License V3.0](https://www.gnu.org/licenses/agpl-3.0)'      
+    case 'GNU General Public License v2.0' :
+      return '[GNU General Public License v2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'      
+    case 'Mozilla Public License 2.0' :
+      return '[Mozilla Public License 2.0](https://opensource.org/licenses/MPL-2.0)'      
+    case 'The Unlicense' :
+      return '[The Unlicense](http://unlicense.org/)'      
+    default: 
+      return '';
+  }
+  }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -81,6 +94,8 @@ function generateMarkdown(answers) {
   ${renderLicenseBadge(answers.license)}
 
   ${answers.license}
+
+  If you want more information on the license, Click Here ${renderLicenseLink(answers.license)}.
 
   ## Features
 

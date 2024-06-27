@@ -1,31 +1,33 @@
 
-  # title
+  # project title
 
   ## Description
 
-  des
+  project desc
 
   ## Installation
 
-  inst
+  project install
 
   ## Usage
 
-  usage
+  project instruction
 
   ## Credit
 
-  
+  project cred
 
   ## License
 
-  [!Creative Commons Zero V1.0 Universal](https://licensebuttons.net/l/zero/1.0/80x15.png)
+  ![GNU General Public License v2.0](https://img.shields.io/badge/License-GPL_v2-blue.svg)
 
-  Creative Commons Zero V1.0 Universal
+  GNU General Public License v2.0
+
+  If you want more information on the license, Click Here [GNU General Public License v2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
 
   ## Features
 
-  feat
+  project feats
 
   ## Contribution
 
@@ -33,10 +35,10 @@
 
   ## GitHub
 
-  git
+  github
 
   ## Email
 
-  em
+  email
   
   
