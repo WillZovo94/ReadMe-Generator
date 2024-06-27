@@ -35,7 +35,7 @@
 
   ## GitHub
 
-  github
+  GitHub : `${answers.github}`;
 
   ## Email
 

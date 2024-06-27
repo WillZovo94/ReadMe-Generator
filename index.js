@@ -54,6 +54,7 @@ const questions = [
         name: 'contribution',
         message: 'How can others contribute towards your program if you would like?'
     },
+    // need to add a questions thing where you put username that it links to your github.
     {
         type: 'input',
         name: 'github',
