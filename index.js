@@ -41,7 +41,7 @@ const questions = [
             'Boost Software License 1.0', 'Creative Commons Zero V1.0 Universal',
             'GNU Affero General Public License V3.0',
             'GNU General Public License v2.0', 'Mozilla Public License 2.0', 'The Unlicense'
-        ]
+        ] // Can add more if you like
     },
 
     {
@@ -54,7 +54,6 @@ const questions = [
         name: 'contribution',
         message: 'How can others contribute towards your program if you would like?'
     },
-    // need to add a questions thing where you put username that it links to your github.
     {
         type: 'input',
         name: 'github',
@@ -82,6 +81,7 @@ function init() {
     inquirer.prompt(questions)
     .then(answers => {
     officialMarkdown = generateMarkdown(answers);
+    // Writes the file to test folder for the examples.
     writeToFile('./Test-Folder/README-Example.md', officialMarkdown)
 })
 

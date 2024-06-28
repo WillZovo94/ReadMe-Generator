@@ -27,7 +27,7 @@
 
   ## Credit
 
-  Project Credit Example
+  Project Credits Example
 
   ## License
 
@@ -45,8 +45,8 @@
 
   ## Questions
 
-  If you have any further questions, you can contact me at: Email@gmail.com.
+  If you have any further questions, you can contact me at: email@gmail.com.
 
-  My GitHub :[GitHub](https://github.com/GitHub).
+  My GitHub :[WillZovo94](https://github.com/WillZovo94).
   
   
