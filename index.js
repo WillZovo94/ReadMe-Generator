@@ -24,7 +24,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'Please add usage instructions and examples'
+        message: 'Please add usage instructions and examples.'
     },
     {
         type: 'input',
@@ -58,12 +58,12 @@ const questions = [
     {
         type: 'input',
         name: 'github',
-        message: 'Please enter your GitHub username'
+        message: 'Please enter your GitHub username.'
     },
     {
         type: 'input',
         name: 'email',
-        message: 'Please enter your email address'
+        message: 'Please enter your email address.'
     }
 ];
 
@@ -82,7 +82,7 @@ function init() {
     inquirer.prompt(questions)
     .then(answers => {
     officialMarkdown = generateMarkdown(answers);
-    writeToFile('README-Example.md', officialMarkdown)
+    writeToFile('./Test-Folder/README-Example.md', officialMarkdown)
 })
 
 }

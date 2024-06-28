@@ -73,9 +73,21 @@ function generateMarkdown(answers) {
   return `
   # ${answers.title}
 
+  ${renderLicenseBadge(answers.license)}
+
   ## Description
 
   ${answers.description}
+
+  ## Table of Contents
+
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credit](#credit)
+  - [License](#license)
+  - [Features](#features)
+  - [Contributions](#contributions)
+  - [Questions](#questions)
 
   ## Installation
 
@@ -91,8 +103,6 @@ function generateMarkdown(answers) {
 
   ## License
 
-  ${renderLicenseBadge(answers.license)}
-
   ${answers.license}
 
   If you want more information on the license, Click Here ${renderLicenseLink(answers.license)}.
@@ -103,15 +113,13 @@ function generateMarkdown(answers) {
 
   ## Contribution
 
-  ${answers.contributions}
+  ${answers.contribution}
 
-  ## GitHub
+  ## Questions
 
-  ${answers.github}
+  If you have any further questions, you can contact me at: ${answers.email}.
 
-  ## Email
-
-  ${answers.email}
+  My GitHub :[${answers.github}](https://github.com/${answers.github}).
   
   `;
 }
